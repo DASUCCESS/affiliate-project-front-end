@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="; charset=utf-8" />
+    <!-- Meta Tags -->
+    <title>View Affiliate - Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="konferge Free Bootstrap Dashboard - Transactions">
+    <meta name="author" content="Themesberg">
+    <meta name="description" content="konferge">
+    <meta name="keywords" content="">
+    <!-- Konferge CSS -->
+    <link type="text/css" href="css/konferge.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
+        <a class="navbar-brand me-lg-5" href="../index.html">
+            <img class="navbar-brand-dark" src="../assets" alt="Volt logo" /> <img class="navbar-brand-light" src="assets/" alt="Volt logo" />
+        </a>
+        <div class="d-flex align-items-center">
+            <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </nav>
+
+    <nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse" data-simplebar>
+        <div class="sidebar-inner px-4 pt-3">
+            <div class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
+                <div class="d-flex align-items-center">
+                    <div class="avatar-lg me-4">
+                        <img src="assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-circle border-white" alt="Bolaji Luqman">
+                    </div>
+                    <div class="d-block">
+                        <h2 class="h5 mb-3">Hi, Bolaji</h2>
+                        <a href="pages/examples/sign-in.html" class="btn btn-secondary btn-sm d-inline-flex align-items-center">
+                            <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>                            Sign Out
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse-close d-md-none">
+                    <a href="#sidebarMenu" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
+                        <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <ul class="nav flex-column pt-3 pt-md-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link d-flex align-items-center">
+                        <span class="sidebar-icon">
+                         <!-- <img src="assets/" height="20" width="20" alt="Konferge Logo"> -->
+                         </span>
+                        <span class="mt-1 ms-1 sidebar-text">View Affiliate</span>
+                    </a>
+                </li>
+                <li class="nav-item  active ">
+                    <a href="dashboard.html" class="nav-link">
+                        <span class="sidebar-icon">
+            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
+          </span>
+                        <span class="sidebar-text">Admin Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="/dashboard/transactions.html" class="nav-link">
+                        <span class="sidebar-icon">
+            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path><path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"></path></svg>
+          </span>
+                        <span class="sidebar-text">Transactions</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="/dashboard/settings.html" class="nav-link">
+                        <span class="sidebar-icon">
+            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+          </span>
+                        <span class="sidebar-text">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- End Nav ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,                                                                                                                                                                                             ,,, -->
+    <main class="content">
+
+        <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark ps-0 pe-2 pb-0">
+            <div class="container-fluid px-0">
+                <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
+                    <div class="d-flex align-items-center">
+                        <!-- Search form -->
+                        <form class="navbar-search form-inline" id="navbar-search-main">
+                            <div class="input-group input-group-merge search-bar">
+                                <span class="input-group-text" id="topbar-addon">
+                <svg class="icon icon-xs" x-description="Heroicon name: solid/search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+                </svg>
+              </span>
+                                <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search" aria-label="Search" aria-describedby="topbar-addon">
+                            </div>
+                        </form>
+                        <!-- / Search form -->
+                    </div>
+                    <!-- Navbar links -->
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark notification-bell unread dropdown-toggle" data-unread-notifications="true" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                <svg class="icon icon-sm text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-center mt-2 py-0">
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="text-center text-primary fw-bold border-bottom border-light py-3">Notifications</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-bottom">
+                                        <div class="row align-items-center">
+                                            <div class="col ps-0 ms-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h4 class="h6 mb-0 text-small">Bolaji Luqman</h4>
+                                                    </div>
+                                                    <div class="text-end">
+                                                        <small class="text-danger">Latest</small>
+                                                    </div>
+                                                </div>
+                                                <p class="font-small mt-1 mb-0">New order came in</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="list-group-item list-group-item-action border-bottom">
+                                        <div class="row align-items-center">
+                                            <div class="col ps-0 ms-2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h4 class="h6 mb-0 text-small">Bolaji Luqman</h4>
+                                                    </div>
+                                                    <div class="text-end">
+                                                        <small>Old</small>
+                                                    </div>
+                                                </div>
+                                                <p class="font-small mt-1 mb-0">Testing Notifcation</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item text-center fw-bold rounded-bottom py-3">
+                                        <svg class="icon icon-xxs text-gray-400 me-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>                                        View all
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown ms-lg-3">
+                            <a class="nav-link dropdown-toggle pt-1 px-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="media d-flex align-items-center">
+                                    <img class="avatar rounded-circle" alt="Image placeholder" src="assets/img/team/profile-picture-1.jpg">
+                                    <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
+                                        <span class="mb-0 font-small fw-bold text-gray-900">Bolaji Luqman</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path></svg>My
+                                    Profile
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>                                    Settings
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v7h-2l-1 2H8l-1-2H5V5z" clip-rule="evenodd"></path></svg>Messages
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z" clip-rule="evenodd"></path></svg>                                    Support
+                                </a>
+                                <div role="separator" class="dropdown-divider my-1"></div>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <svg class="dropdown-icon text-danger me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>                                    Logout
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <div class="row">
+
+            <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <div class="row d-block d-xl-flex align-items-center">
+                            <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
+                                <div class="icon-shape icon-shape-primary rounded me-4 me-sm-0">
+                                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 101.95"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>earn</title><path class="cls-1" d="M72.37,37.24A4.31,4.31,0,0,1,73,39.42c0,4.11-6.36,7.45-14.21,7.45s-14.2-3.34-14.2-7.45a4.36,4.36,0,0,1,.65-2.23c1.81,3,7.19,5.22,13.55,5.22s11.69-2.17,13.53-5.16c0-.07,0-.08.06,0ZM25.11,88.48V49.69H42.57C50,51,57.36,55,64.76,59.68H78.31c6.14.37,9.35,6.59,3.39,10.67-4.75,3.49-11,3.29-17.46,2.72-4.43-.22-4.62,5.73,0,5.75,1.61.13,3.36-.25,4.88-.25,8,0,14.63-1.54,18.67-7.88l2-4.74L110,56c10.09-3.32,17.27,7.23,9.83,14.57A263.86,263.86,0,0,1,74.91,97c-11.13,6.77-22.26,6.54-33.37,0L25.11,88.48ZM0,46H19.86V92.38H0V46Zm113.5-5.91a5.2,5.2,0,0,1,.47,2.12c0,5-7.8,9.13-17.41,9.13s-17.41-4.09-17.41-9.13a5.34,5.34,0,0,1,.8-2.73c2.22,3.71,8.82,6.4,16.61,6.4,7.34,0,13.58-2.29,16.16-5.71.56-.75.35-1,.78-.08Zm-.19-11.41a5.3,5.3,0,0,1,.66,2.49c0,5-7.8,9.13-17.41,9.13s-17.41-4.09-17.41-9.13A5.39,5.39,0,0,1,80,28.4c2.22,3.71,8.82,6.4,16.61,6.4,7.61,0,14.07-2.55,16.43-6.11.23-.34.14-.4.32-.05Zm-10.48-23-.18,2L94.1,6.93A7.86,7.86,0,0,1,95.57,10l-2.06-.19a6.44,6.44,0,0,0-.93-2,4.07,4.07,0,0,0-1.77-1.59L91,4.38l11.73,1c.23,0,.16,0,.13.27ZM97.5,1.88c7.46.18,13.37,2.63,13.37,5.59,0,3.11-6.41,5.62-14.31,5.62S82.25,10.57,82.25,7.47c0-2.95,5.82-5.37,13.19-5.59.69,0,1.38,0,2.06,0ZM97.74,0C106.8.33,114,4.3,114,9.13c0,5-7.8,9.13-17.41,9.13s-17.41-4.1-17.41-9.13C79.15,4.31,86.29.35,95.33,0c.8,0,1.61,0,2.41,0ZM114,20.31c0,5-7.8,9.13-17.41,9.13s-17.41-4.09-17.41-9.13a5.17,5.17,0,0,1,.74-2.62C82,21.45,88.68,24.2,96.56,24.2c5.16,0,13.85-1.55,16.68-6.51a5.25,5.25,0,0,1,.73,2.62Zm-50-1.88-.17,1.84-7-.6A6.41,6.41,0,0,1,58,22.18L56.29,22a5.36,5.36,0,0,0-.75-1.65,3.51,3.51,0,0,0-1.45-1.3l.13-1.49,9.7.84Zm-3.31-2.84c5.58.34,9.85,2.24,9.85,4.52,0,2.53-5.23,4.58-11.68,4.58s-11.67-2.06-11.67-4.58c0-2.23,4.06-4.09,9.44-4.49a27.51,27.51,0,0,1,4.06,0Zm.26-1.5C67.73,14.62,73,17.72,73,21.46c0,4.11-6.36,7.45-14.21,7.45s-14.2-3.34-14.2-7.45c0-3.75,5.28-6.85,12.15-7.37a26,26,0,0,1,4.14,0ZM72.46,28.56a4.33,4.33,0,0,1,.53,2C73,34.7,66.63,38,58.78,38s-14.2-3.34-14.2-7.45a4.12,4.12,0,0,1,.6-2.14c1.75,3.07,7.17,5.31,13.6,5.31s11.73-2.19,13.55-5.2c.08-.14,0-.15.13,0Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-7 px-xl-0">
+                                <div class="d-none d-sm-block">
+                                    <h2 class="h6 text-gray-400 mb-0">Affiliate Name</h2>
+                                    <h3 class="fw-extrabold mb-2">Bolaji Muhammed Luqman</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <div class="row d-block d-xl-flex align-items-center">
+                            <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
+                                <div class="icon-shape icon-shape-secondary rounded me-4 me-sm-0">
+                                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 80.19"><defs><style>.cls-1{fill:#262626;}.cls-1,.cls-2{fill-rule:evenodd;}.cls-2{fill:#d8453e;}</style></defs><title>referral</title><path class="cls-1" d="M23.12,45.55c3.35,9.84,17.33,10.21,20.47,0,3.7,3.33,12.28,4,16.36,6.27a10.41,10.41,0,0,1,3.38,2.87,13.75,13.75,0,0,1,2.53,7.43l.24,1.94-1.53.8a17.2,17.2,0,0,1-10.13,1.56,6.32,6.32,0,0,0-7,5.54c0,.2,0,.41-.05.61H3.91C1.45,72.38.2,71.11,0,68.91l.85-6.79a13.66,13.66,0,0,1,2.52-7.43,10.6,10.6,0,0,1,3.4-2.87c4.85-2.7,12.31-2.63,16.35-6.27ZM74.2,33.29l3.22-.09,2.68-.07C77,23.52,78,14.69,85.54,7.19c1.27,4.11,4.13,7.52,9,10a46.71,46.71,0,0,1,6.75,6.21c.39-1.58-1.08-3.51-2.87-5.5a8.65,8.65,0,0,1,4.25,4.16c1.25,2.54,1.24,4.7.82,7.46a15.94,15.94,0,0,1-1,3.58H107c4.69-10,1.71-25-7.88-31.27C96.15-.07,94,0,90.58,0c-4,0-6,.12-9.36,2.36-5,3.3-8.06,9-9.35,17-.26,3.95-.44,10.79,2.33,14ZM101.11,37c5.06,2,10.23,3.89,14.06,6.3,2.44,1.52,3.7,2.67,4.68,4.52,2.56,4.81,2.5,9.13,3,14.44H102.56l0-7.81a6.3,6.3,0,0,0-6.28-6.28L71.91,48a6.32,6.32,0,0,0-2.46.49,17.53,17.53,0,0,0-4.26-3.31c-.39-.22-.8-.42-1.23-.61.55-.42,1.19-.85,1.92-1.31,3.84-2.41,9-4.34,14.07-6.3,1.48,8.81,21,7.33,21.16,0ZM20.23,27.51a2.53,2.53,0,0,0-1.18.36,1.15,1.15,0,0,0-.41.47,1.63,1.63,0,0,0-.14.78A7.45,7.45,0,0,0,20,32.71l0,0h0l3.16,5a27,27,0,0,0,4.24,5.56,8.51,8.51,0,0,0,6,2.4,8.76,8.76,0,0,0,6.32-2.52A28,28,0,0,0,44,37.27l3.56-5.86c.73-1.64.94-2.66.7-3.14-.13-.27-.62-.38-1.42-.33a3.55,3.55,0,0,1-2-.07l1.44-4.05c-6.52-.08-11-1.21-16.25-4.59-1.73-1.1-2.25-2.37-4-2.24a5.83,5.83,0,0,0-3.28,1.77A8.49,8.49,0,0,0,21,22.47L22,27.54a3.58,3.58,0,0,1-1.8,0Zm28.32-1.46a2.46,2.46,0,0,1,1.61,1.31c.54,1.08.32,2.67-.68,5h0l-.06.12-3.61,5.94a29.61,29.61,0,0,1-4.71,6.38,10.76,10.76,0,0,1-7.75,3.07,10.55,10.55,0,0,1-7.37-3,28.25,28.25,0,0,1-4.58-6l-3.16-5a9.25,9.25,0,0,1-1.82-4.67,3.69,3.69,0,0,1,.33-1.71,3,3,0,0,1,1.14-1.33,3.67,3.67,0,0,1,.84-.42,53.61,53.61,0,0,1-.13-7.41A12.42,12.42,0,0,1,19,16.26a12.21,12.21,0,0,1,5.35-6.82A14.77,14.77,0,0,1,27.21,8c6.08-2.19,14.14-1,18.45,3.67a12.24,12.24,0,0,1,3.09,7.76l-.2,6.58Z"/><path class="cls-2" d="M96.21,54.42,71.88,54.3,78,60.39C71.91,69.63,64.11,73.93,53.7,72.7c12.77,11.17,26.72,8.77,36.42-.16l6.21,6.21-.12-24.33Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-7 px-xl-0">
+                                <div class="d-none d-sm-block p-4">
+                                    <h2 class="h6 text-gray-400 mb-0">Affiliate Total Referrals</h2>
+                                    <h3 class="fw-extrabold mb-2">500</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <div class="row d-block d-xl-flex align-items-center">
+                            <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
+                                <div class="icon-shape icon-shape-tertiary rounded me-4 me-sm-0">
+                                    <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 115.35 122.88" style="enable-background:new 0 0 115.35 122.88" xml:space="preserve"><g><path d="M25.27,86.92c-1.81,0-3.26-1.46-3.26-3.26s1.47-3.26,3.26-3.26h21.49c1.81,0,3.26,1.46,3.26,3.26s-1.46,3.26-3.26,3.26 H25.27L25.27,86.92L25.27,86.92z M61.1,77.47c-0.96,0-1.78-0.82-1.78-1.82c0-0.96,0.82-1.78,1.78-1.78h4.65c0.04,0,0.14,0,0.18,0 c1.64,0.04,3.1,0.36,4.33,1.14c1.37,0.87,2.37,2.19,2.92,4.15c0,0.04,0,0.09,0.05,0.14l0.46,1.82h39.89c1,0,1.78,0.82,1.78,1.78 c0,0.18-0.05,0.36-0.09,0.55l-4.65,18.74c-0.18,0.82-0.91,1.37-1.73,1.37l0,0l-29.18,0c0.64,2.37,1.28,3.65,2.14,4.24 c1.05,0.68,2.87,0.73,5.93,0.68h0.04l0,0h20.61c1,0,1.78,0.82,1.78,1.78c0,1-0.82,1.78-1.78,1.78H87.81l0,0 c-3.79,0.04-6.11-0.05-7.98-1.28c-1.92-1.28-2.92-3.46-3.92-7.43l0,0L69.8,80.2c0-0.05,0-0.05-0.04-0.09 c-0.27-1-0.73-1.69-1.37-2.05c-0.64-0.41-1.5-0.59-2.51-0.59c-0.05,0-0.09,0-0.14,0H61.1L61.1,77.47L61.1,77.47z M103.09,114.13 c2.42,0,4.38,1.96,4.38,4.38s-1.96,4.38-4.38,4.38s-4.38-1.96-4.38-4.38S100.67,114.13,103.09,114.13L103.09,114.13L103.09,114.13z M83.89,114.13c2.42,0,4.38,1.96,4.38,4.38s-1.96,4.38-4.38,4.38c-2.42,0-4.38-1.96-4.38-4.38S81.48,114.13,83.89,114.13 L83.89,114.13L83.89,114.13z M25.27,33.58c-1.81,0-3.26-1.47-3.26-3.26c0-1.8,1.47-3.26,3.26-3.26h50.52 c1.81,0,3.26,1.46,3.26,3.26c0,1.8-1.46,3.26-3.26,3.26H25.27L25.27,33.58L25.27,33.58z M7.57,0h85.63c2.09,0,3.99,0.85,5.35,2.21 s2.21,3.26,2.21,5.35v59.98h-6.5V7.59c0-0.29-0.12-0.56-0.31-0.76c-0.2-0.19-0.47-0.31-0.76-0.31l0,0H7.57 c-0.29,0-0.56,0.12-0.76,0.31S6.51,7.3,6.51,7.59v98.67c0,0.29,0.12,0.56,0.31,0.76s0.46,0.31,0.76,0.31h55.05 c0.61,2.39,1.3,4.48,2.23,6.47H7.57c-2.09,0-3.99-0.85-5.35-2.21C0.85,110.24,0,108.34,0,106.25V7.57c0-2.09,0.85-4,2.21-5.36 S5.48,0,7.57,0L7.57,0L7.57,0z M25.27,60.25c-1.81,0-3.26-1.46-3.26-3.26s1.47-3.26,3.26-3.26h50.52c1.81,0,3.26,1.46,3.26,3.26 s-1.46,3.26-3.26,3.26H25.27L25.27,60.25L25.27,60.25z"/></g></svg>                                    </div>
+                            </div>
+                            <div class="col-12 col-xl-7 px-xl-0">
+                                <div class="d-none d-sm-block">
+                                    <h2 class="h6 text-gray-400 mb-0"> Affiliate Total Sales</h2>
+                                    <h3 class="fw-extrabold mb-2">₦1250</h3>
+                                </div>
+                                <div class="d-none d-sm-block p-1">
+                                    <h2 class="h6 text-gray-400 mb-0"> Affiliate I.D</h2>
+                                    <h3 class="fw-extrabold mb-2">456479</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card card-body border-0 shadow table-wrapper table-responsive mb-4">
+            <div class="card-header">
+                <div class="row align-items-center">
+                    <div class="col pb-3">
+                        <h2 class="fs-5 fw-bold mb-0 pb-3">List of orders</h2>
+                        <!-- Search form -->
+                        <form class="navbar-search form-inline" id="navbar-search-main">
+                            <div class="input-group input-group-merge search-bar">
+                                <span class="input-group-text" id="topbar-addon">
+                                <svg class="icon icon-xs" x-description="Heroicon name: solid/search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+                                 </svg>
+                                </span>
+                                <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search" aria-label="Search" aria-describedby="topbar-addon">
+                            </div>
+                        </form>
+                        <!-- / Search form -->
+                    </div>
+                    <div class="col text-end">
+                        <a href="transactions.html" class="btn btn-primary">View More</a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Delete all
+                           </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Delete all orders</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Are you sure you want to delete all orders?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Yes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of modal -->
+                    </div>
+                </div>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th class="border-gray-200">Order ID</th>
+                        <th class="border-gray-200">Bill For</th>
+                        <th class="border-gray-200">Issue Date</th>
+                        <th class="border-gray-200">Due Date</th>
+                        <th class="border-gray-200">Total</th>
+                        <th class="border-gray-200">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Item -->
+                    <tr>
+                        <td>
+                            <a href="#" class="fw-bold">
+                                    456420
+                                </a>
+                        </td>
+                        <td>
+                            <span class="fw-normal">Platinum Subscription Plan</span>
+                        </td>
+                        <td><span class="fw-normal">1 Jan 2020</span></td>
+                        <td><span class="fw-normal">1 Feb 2020</span></td>
+                        <td><span class="fw-bold">₦799,00</span></td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon icon-sm">
+                                            <span class="fas fa-ellipsis-h icon-dark"></span>
+                                        </span>
+                                        <span class="visually btn btn-secondary">Change Status</span>
+                                    </button>
+                                <div class="dropdown-menu py-0">
+                                    <a class="dropdown-item text-success rounded-top" href="#"><span class="fas fa-eye me-2"></span>Paid and Approve</a>
+                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-edit me-2"></span>Cancelled</a>
+                                    <a class="dropdown-item text-warning rounded-bottom" href="#"><span class="fas fa-trash-alt me-2"></span>Due</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon icon-sm">
+                                            <span class="fas fa-ellipsis-h icon-dark"></span>
+                                        </span>
+                                        <span class="visually btn btn-primary"> Take Action</span>
+                                    </button>
+                                <div class="dropdown-menu py-0">
+                                    <a class="dropdown-item rounded-top" href="view-order-details.html"><span class="fas fa-eye me-2"></span>View & Edit</a>
+                                    <a class="dropdown-item text-danger rounded-bottom" href="#"><span class="fas fa-trash-alt me-2"></span>Remove</a>
+                                </div>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <!-- Item -->
+                    <tr>
+                        <td>
+                            <a href="#" class="fw-bold">
+                                    456479
+                                </a>
+                        </td>
+                        <td>
+                            <span class="fw-normal">Platinum Subscription Plan</span>
+                        </td>
+                        <td><span class="fw-normal">1 Dec 2019</span></td>
+                        <td><span class="fw-normal">1 Jan 2020</span></td>
+                        <td><span class="fw-bold">₦799,00</span></td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon icon-sm">
+                                            <span class="fas fa-ellipsis-h icon-dark"></span>
+                                        </span>
+                                        <span class="visually btn btn-secondary">Change Status</span>
+                                    </button>
+                                <div class="dropdown-menu py-0">
+                                    <a class="dropdown-item text-success rounded-top" href="#"><span class="fas fa-eye me-2"></span>Paid and Approve</a>
+                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-edit me-2"></span>Cancelled</a>
+                                    <a class="dropdown-item text-warning rounded-bottom" href="#"><span class="fas fa-trash-alt me-2"></span>Due</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon icon-sm">
+                                            <span class="fas fa-ellipsis-h icon-dark"></span>
+                                        </span>
+                                        <span class="visually btn btn-primary"> Take Action</span>
+                                    </button>
+                                <div class="dropdown-menu py-0">
+                                    <a class="dropdown-item rounded-top" href="view-order-details.html"><span class="fas fa-eye me-2"></span>View & Edit</a>
+                                    <a class="dropdown-item text-danger rounded-bottom" href="#"><span class="fas fa-trash-alt me-2"></span>Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Item -->
+                    <tr>
+                        <td>
+                            <a href="#" class="fw-bold">
+                                    456478
+                                </a>
+                        </td>
+                        <td>
+                            <span class="fw-normal">Platinum Subscription Plan</span>
+                        </td>
+                        <td><span class="fw-normal">1 Nov 2019</span></td>
+                        <td><span class="fw-normal">1 Dec 2019</span></td>
+                        <td><span class="fw-bold">₦799,00</span></td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon icon-sm">
+                                            <span class="fas fa-ellipsis-h icon-dark"></span>
+                                        </span>
+                                        <span class="visually btn btn-secondary">Change Status</span>
+                                    </button>
+                                <div class="dropdown-menu py-0">
+                                    <a class="dropdown-item text-success rounded-top" href="#"><span class="fas fa-eye me-2"></span>Paid and Approve</a>
+                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-edit me-2"></span>Cancelled</a>
+                                    <a class="dropdown-item text-warning rounded-bottom" href="#"><span class="fas fa-trash-alt me-2"></span>Due</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon icon-sm">
+                                            <span class="fas fa-ellipsis-h icon-dark"></span>
+                                        </span>
+                                        <span class="visually btn btn-primary"> Take Action</span>
+                                    </button>
+                                <div class="dropdown-menu py-0">
+                                    <a class="dropdown-item rounded-top" href="view-order-details.html"><span class="fas fa-eye me-2"></span>View & Edit</a>
+                                    <a class="dropdown-item text-danger rounded-bottom" href="#"><span class="fas fa-trash-alt me-2"></span>Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Item -->
+                    <tr>
+                        <td>
+                            <a href="#" class="fw-bold">
+                                    453673
+                                </a>
+                        </td>
+                        <td>
+                            <span class="fw-normal">Gold Subscription Plan</span>
+                        </td>
+                        <td><span class="fw-normal">1 Oct 2019</span></td>
+                        <td><span class="fw-normal">1 Nov 2019</span></td>
+                        <td><span class="fw-bold">₦799,00</span></td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon icon-sm">
+                                            <span class="fas fa-ellipsis-h icon-dark"></span>
+                                        </span>
+                                        <span class="visually btn btn-secondary">Change Status</span>
+                                    </button>
+                                <div class="dropdown-menu py-0">
+                                    <a class="dropdown-item text-success rounded-top" href="#"><span class="fas fa-eye me-2"></span>Paid and Approve</a>
+                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-edit me-2"></span>Cancelled</a>
+                                    <a class="dropdown-item text-warning rounded-bottom" href="#"><span class="fas fa-trash-alt me-2"></span>Due</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon icon-sm">
+                                            <span class="fas fa-ellipsis-h icon-dark"></span>
+                                        </span>
+                                        <span class="visually btn btn-primary"> Take Action</span>
+                                    </button>
+                                <div class="dropdown-menu py-0">
+                                    <a class="dropdown-item rounded-top" href="#"><span class="fas fa-eye me-2"></span>View Details</a>
+                                    <a class="dropdown-item" href="#"><span class="fas fa-edit me-2"></span>Edit</a>
+                                    <a class="dropdown-item text-danger rounded-bottom" href="#"><span class="fas fa-trash-alt me-2"></span>Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Item -->
+                    <tr>
+                        <td>
+                            <a href="#" class="fw-bold">
+                                    456468
+                                </a>
+                        </td>
+                        <td>
+                            <span class="fw-normal">Gold Subscription Plan</span>
+                        </td>
+                        <td><span class="fw-normal">1 Sep 2019</span></td>
+                        <td><span class="fw-normal">1 Oct 2019</span></td>
+                        <td><span class="fw-bold">₦799,00</span></td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon icon-sm">
+                                            <span class="fas fa-ellipsis-h icon-dark"></span>
+                                        </span>
+                                        <span class="visually btn btn-secondary">Change Status</span>
+                                    </button>
+                                <div class="dropdown-menu py-0">
+                                    <a class="dropdown-item text-success rounded-top" href="#"><span class="fas fa-eye me-2"></span>Paid and Approve</a>
+                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-edit me-2"></span>Cancelled</a>
+                                    <a class="dropdown-item text-warning rounded-bottom" href="#"><span class="fas fa-trash-alt me-2"></span>Due</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon icon-sm">
+                                            <span class="fas fa-ellipsis-h icon-dark"></span>
+                                        </span>
+                                        <span class="visually btn btn-primary"> Take Action</span>
+                                    </button>
+                                <div class="dropdown-menu py-0">
+                                    <a class="dropdown-item rounded-top" href="#"><span class="fas fa-eye me-2"></span>View Details</a>
+                                    <a class="dropdown-item" href="#"><span class="fas fa-edit me-2"></span>Edit</a>
+                                    <a class="dropdown-item text-danger rounded-bottom" href="#"><span class="fas fa-trash-alt me-2"></span>Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Item -->
+                    <tr>
+                        <td>
+                            <a href="#" class="fw-bold">
+                                    456478
+                                </a>
+                        </td>
+                        <td>
+                            <span class="fw-normal">Flexible Subscription Plan</span>
+                        </td>
+                        <td><span class="fw-normal">1 Aug 2019</span></td>
+                        <td><span class="fw-normal">1 Sep 2019</span></td>
+                        <td><span class="fw-bold">₦799,00</span></td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon icon-sm">
+                                            <span class="fas fa-ellipsis-h icon-dark"></span>
+                                        </span>
+                                        <span class="visually btn btn-secondary">Change Status</span>
+                                    </button>
+                                <div class="dropdown-menu py-0">
+                                    <a class="dropdown-item text-success rounded-top" href="#"><span class="fas fa-eye me-2"></span>Paid and Approve</a>
+                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-edit me-2"></span>Cancelled</a>
+                                    <a class="dropdown-item text-warning rounded-bottom" href="#"><span class="fas fa-trash-alt me-2"></span>Due</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon icon-sm">
+                                            <span class="fas fa-ellipsis-h icon-dark"></span>
+                                        </span>
+                                        <span class="visually btn btn-primary"> Take Action</span>
+                                    </button>
+                                <div class="dropdown-menu py-0">
+                                    <a class="dropdown-item rounded-top" href="#"><span class="fas fa-eye me-2"></span>View Details</a>
+                                    <a class="dropdown-item" href="#"><span class="fas fa-edit me-2"></span>Edit</a>
+                                    <a class="dropdown-item text-danger rounded-bottom" href="#"><span class="fas fa-trash-alt me-2"></span>Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination mb-0">
+                        <li class="page-item">
+                            <a class="page-link" href="#">Previous</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="fw-normal small mt-4 mt-lg-0">Showing <b>5</b> out of <b>25</b> entries</div>
+            </div>
+        </div>
+        <!-- List of all affiliate under affiliate -->
+        <div class="card card-body border-0 shadow table-wrapper table-responsive mb-4">
+            <div class="card-header">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h2 class="fs-5 fw-bold mb-0 pb-3">List of Affiliates under <span class="text-danger">Bolaji Muhammed Luqman</span></h2>
+                        <!-- Search form -->
+                        <form class="navbar-search form-inline pb-3" id="navbar-search-main">
+                            <div class="input-group input-group-merge search-bar">
+                                <span class="input-group-text" id="topbar-addon">
+                                <svg class="icon icon-xs" x-description="Heroicon name: solid/search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+                                 </svg>
+                                </span>
+                                <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search" aria-label="Search" aria-describedby="topbar-addon">
+                            </div>
+                        </form>
+                        <!-- / Search form -->
+                    </div>
+
+
+                    <div class="col text-end">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#affModal">
+                        Delete all
+                       </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="affModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Delete all affiliate</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Are you sure you want to delete all affiliates?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Yes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of modal -->
+                    </div>
+                </div>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th class="border-gray-200">Affiliate ID</th>
+                        <th class="border-gray-200">Affiliate Name</th>
+                        <th class="border-gray-200">Date Joined</th>
+                        <th class="border-gray-200">Due Date</th>
+                        <th class="border-gray-200">Total Sales</th>
+                        <th class="border-gray-200">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Item -->
+                    <tr>
+                        <td>
+                            <span class="fw-bold">
+                                    456479
+                            </span>
+                        </td>
+                        <td>
+                            <span class="fw-normal">Adebola James</span>
+                        </td>
+                        <td><span class="fw-normal">1 Dec 2019</span></td>
+                        <td><span class="fw-normal">1 Jan 2020</span></td>
+                        <td><span class="fw-bold">₦799,00</span></td>
+                        <td>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button class="btn btn-danger">Remove</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Item -->
+                    <tr>
+                        <td>
+                            <span class="fw-bold">
+                                    456479
+                            </span>
+                        </td>
+                        <td>
+                            <span class="fw-normal">Loise Okorie</span>
+                        </td>
+                        <td><span class="fw-normal">1 Dec 2019</span></td>
+                        <td><span class="fw-normal">1 Jan 2020</span></td>
+                        <td><span class="fw-bold">₦799,00</span></td>
+                        <td>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button class="btn btn-danger">Remove</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Item -->
+                    <tr>
+                        <td>
+                            <span class="fw-bold">
+                                    456479
+                            </span>
+                        </td>
+                        <td>
+                            <span class="fw-normal">Ademola James</span>
+                        </td>
+                        <td><span class="fw-normal">1 Dec 2019</span></td>
+                        <td><span class="fw-normal">1 Jan 2020</span></td>
+                        <td><span class="fw-bold">₦799,00</span></td>
+                        <td>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button class="btn btn-danger">Remove</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Item -->
+                    <tr>
+                        <td>
+                            <span class="fw-bold">
+                                    456479
+                            </span>
+                        </td>
+                        <td>
+                            <span class="fw-normal">Hassan Tolu</span>
+                        </td>
+                        <td><span class="fw-normal">1 Dec 2019</span></td>
+                        <td><span class="fw-normal">1 Jan 2020</span></td>
+                        <td><span class="fw-bold">₦799,00</span></td>
+                        <td>
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button class="btn btn-danger">Remove</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Item -->
+                    <tr>
+                        <td>
+                            <span class="fw-bold">
+                                    456479
+                            </span>
+                        </td>
+                        <td>
+                            <span class="fw-normal">Bolatito Nurein</span>
+                        </td>
+                        <td><span class="fw-normal">1 Dec 2019</span></td>
+                        <td><span class="fw-normal">1 Jan 2020</span></td>
+                        <td><span class="fw-bold">₦799,00</span></td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn btn-danger">Remove</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div class="card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination mb-0">
+                        <li class="page-item">
+                            <a class="page-link" href="#">Previous</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="fw-normal small mt-4 mt-lg-0">Showing <b>5</b> out of <b>25</b> entries</div>
+            </div>
+        </div>
+
+        <footer class="bg-white rounded shadow p-5 mb-4 mt-4">
+            <div class="row">
+                <div class="col-12 col-md-4 col-xl-6 mb-4 mb-md-0">
+                    <p class="mb-0 text-center text-lg-start">© 2022-<span class="current-year"></span> <a class="text-primary fw-normal" href="#" target="_blank">Konferge</a></p>
+                </div>
+                <div class="col-12 col-md-8 col-xl-6 text-center text-lg-start">
+                    <!-- List -->
+                    <ul class="list-inline list-group-flush list-group-borderless text-md-end mb-0">
+                        <li class="list-inline-item px-0 px-sm-2">
+                            <a href="#">Homepage</a>
+                        </li>
+                        <li class="list-inline-item px-0 px-sm-2">
+                            <a href="#">Shop</a>
+                        </li>
+                        <li class="list-inline-item px-0 px-sm-2">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Core -->
+    <!-- <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
